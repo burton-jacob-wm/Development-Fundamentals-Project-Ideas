@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Food Tracker</title>
+    <link type="text/css" href="stylesheet.css" rel="stylesheet">
+</head>
+
+<body>
+<!--Calling the JavaScript File-->
+<script src="script.js"></script>
+
+<!--Beginning of the Form-->
+<form id="foodtracker">
+    <fieldset>
+        <legend>Food Tracker:</legend>
+        <!--Beginning of the TABLE which the form is in.-->
+        <table>
+            <tr>
+                <td>Food:</td>
+                <td>Purchase Date:</td>
+                <td>Expiration Date:</td>
+            </tr>
+            <tr>
+                <!--Inputs where users type in answers.-->
+                <td><input type="text" name="foodname" id="food"></td>
+                <td><input type="text" name="purchase" id="purchase"></td>
+                <td><input type="text" name="expiration" id="expiration"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><textarea rows="4" cols="60" name="description" id="description">Item Description.</textarea></td>
+                <!--Buttons for submit and reset.-->
+                <td><button type="button" onclick="submitForm()">Submit</button> <button type="reset">Reset</button></td>
+            </tr>
+        </table>
+    </fieldset>
+</form>
+
+<br>
+
+<!--Table with results-->
+<table border="1" id="results">
+    <tr>
+        <td>Food</td>
+        <td>Purchase Date</td>
+        <td>Expiration Date</td>
+        <td>Description</td>
+    </tr>
+</table>
+
+</body>
+
+</html>

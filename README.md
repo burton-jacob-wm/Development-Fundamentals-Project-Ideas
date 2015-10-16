@@ -1,2 +1,3 @@
 # Development-Fundamentals-Project-Ideas
-A student shelled repo with code for demonstration by instructor or other student
+Uses basic Javascript DOM features.
+- Doesn't show when food is close to expiring like asked.
