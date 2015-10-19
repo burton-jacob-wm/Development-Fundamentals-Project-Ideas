@@ -7,9 +7,12 @@
 </head>
 
 <body>
-<!--Calling the JavaScript File-->
+<!--Calling the JavaScript Files-->
+<script src="jquery.js"></script>
 <script src="script.js"></script>
-
+<script>
+    $('')
+</script>
 <!--Beginning of the Form-->
 <form id="foodtracker">
     <fieldset>
@@ -23,12 +26,12 @@
             </tr>
             <tr>
                 <!--Inputs where users type in answers.-->
-                <td><input type="text" name="foodname" id="food"></td>
-                <td><input type="text" name="purchase" id="purchase"></td>
-                <td><input type="text" name="expiration" id="expiration"></td>
+                <td><input type="text" name="foodname" id="food" value=""></td>
+                <td><input type="date" name="purchase" id="purchase" value=""></td>
+                <td><input type="date" name="expiration" id="expiration" value=""></td>
             </tr>
             <tr>
-                <td colspan="2"><textarea rows="4" cols="60" name="description" id="description">Item Description.</textarea></td>
+                <td colspan="2"><textarea rows="4" cols="60" name="description" id="description">ITEM DESCRIPTION</textarea></td>
                 <!--Buttons for submit and reset.-->
                 <td><button type="button" onclick="submitForm()">Submit</button> <button type="reset">Reset</button></td>
             </tr>
@@ -40,7 +43,7 @@
 
 <!--Table with results-->
 <table border="1" id="results">
-    <tr>
+    <tr id="resultsHeader">
         <td>Food</td>
         <td>Purchase Date</td>
         <td>Expiration Date</td>
